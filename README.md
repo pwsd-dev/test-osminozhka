@@ -1,1 +1,2 @@
-# test-osminozhka
+# template
+template for start project
