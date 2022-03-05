@@ -1,14 +1,13 @@
-@import '../fonts/fonts.less';
+@import "../fonts/fonts.less";
 .reset();
 
-.wrapper{
-    .wrapper();
-    // .laptopMd-block({
-    //     max-width: 1200px;
-    // });
-    @media screen and (orientation: landscape){
-      
-    }
+.wrapper {
+  .wrapper();
+  // .laptopMd-block({
+  //     max-width: 1200px;
+  // });
+  @media screen and (orientation: landscape) {
+  }
 }
 
 .scrollbar(@color_scrollbar-track, @color_scrollbar-thumb);
@@ -19,19 +18,32 @@
 @font-face {
   .font(@font; @fontRegular);
 }
+@font-face {
+  .font(@Montserrat; "@{Montserrat}-Bold");
+}
+@font-face {
+  .font(@Montserrat; "@{Montserrat}-Semibold");
+}
+@font-face {
+  .font(@Montserrat; "@{Montserrat}-Medium");
+}
+@font-face {
+  .font(@Montserrat; "@{Montserrat}-Regular");
+}
 
 body {
   font-family: @fontRegular;
 }
-a, button{
+a,
+button {
   cursor: pointer;
-  &:focus{
-      outline: none;
+  &:focus {
+    outline: none;
   }
 }
-input{
+input {
   cursor: text;
-  &:focus{
-      outline: none;
+  &:focus {
+    outline: none;
   }
 }

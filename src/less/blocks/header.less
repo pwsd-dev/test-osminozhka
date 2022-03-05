@@ -1,9 +1,186 @@
-.header{
-    .parent{
-        .row-flex();
-        .child{
-            .col();
-            .size(1);
-        }
+.header {
+  background-color: #121423;
+  padding: 30px 0 14px 0;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    .xs-block({
+        width: 180px;
+    });
+  }
+
+  .mid,
+  .right {
+    .laptopMd-block({
+        display: none;
+    });
+  }
+
+  .page__text_w-600 {
+    margin: 0 20px;
+  }
+
+  .mb20 {
+    margin-bottom: 20px;
+  }
+
+  .burger {
+    display: none;
+    .laptopMd-block({
+        display: block;
+    });
+    transition: 0.6s ease-in-out;
+    background-color: #121423;
+
+    button {
+      background-color: #121423;
+      border: transparent;
     }
+    .icon {
+      width: 50px;
+      height: 34px;
+      position: relative;
+      margin-left: 48px;
+      cursor: pointer;
+      z-index: 4000;
+      span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        border-radius: 9px;
+        left: 0;
+        transform: rotate(0deg);
+        transition: 0.25 ease;
+        color: #fff;
+        transition: 0.3s ease-in-out;
+        &:nth-child(1) {
+          top: 0;
+          &::after {
+            content: "";
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            display: inline-block;
+            width: 48px;
+            height: 3px;
+            background-color: #00ffff;
+            z-index: 5;
+          }
+        }
+        &:nth-child(2) {
+          top: 13px;
+          z-index: 10;
+          &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 44px;
+            left: 3px;
+            top: 3px;
+            height: 8px;
+            background-color: #00ffff;
+            z-index: 5;
+            width: 48px;
+            height: 3px;
+          }
+        }
+        &:nth-child(3) {
+          top: 13px;
+          height: 3px;
+        }
+        &:nth-child(4) {
+          top: 26px;
+          z-index: 10;
+          &::after {
+            content: "";
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            display: inline-block;
+            width: 48px;
+            height: 3px;
+            background-color: #00ffff;
+            z-index: 5;
+          }
+        }
+      }
+      &.active {
+        transition: 0.2s ease;
+
+        span {
+          z-index: 20;
+          &:nth-child(1) {
+            top: 18px;
+            width: 0%;
+            left: 50%;
+            z-index: 10;
+            display: none;
+            transition: 0.1s ease-in-out;
+          }
+          &:nth-child(2) {
+            transform: rotate(45deg);
+            z-index: 10;
+            transition: 0.1s ease-in-out;
+          }
+          &:nth-child(3) {
+            transform: rotate(-43deg);
+            z-index: 10;
+            transition: 0.1s ease-in-out;
+            background-color: #00ffff;
+            top: 15px;
+            right: 2px;
+          }
+          &:nth-child(4) {
+            top: 18px;
+            width: 0%;
+            left: 50%;
+            z-index: 10;
+            transition: 0.1s ease-in-out;
+
+            &::after {
+              display: none;
+              transition: 0.1s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+    .other {
+      display: none;
+      position: fixed;
+
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      z-index: 3000;
+      background: rgba(39, 39, 39, 0.6);
+      .inner {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow-x: hidden;
+        // opacity: 0;
+        background: #000;
+        transition: all 1s ease;
+        .nav-center {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }

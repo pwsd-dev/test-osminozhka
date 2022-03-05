@@ -1,5 +1,32 @@
 header.header
     .wrapper
-        .parent
-            div.child Header
-            div.child Header2
+        nav.nav
+            .left
+                a(href="#")
+                    .logo
+                        img(src="assets/img/logo.svg")
+            .mid
+                a(href="#").page__text_w-600 Услуги
+                a(href="#").page__text_w-600 Портфолио
+                a(href="#").page__text_w-600 О компании
+                a(href="#").page__text_w-600 Команда
+                a(href="#").page__text_w-600 Отзывы
+                a(href="#").page__text_w-600 Контакты
+            .right
+                p.page__text_w-500 Ru/En
+            .burger
+                button(type="button" onclick="openBlock()")#burgerBtn.icon
+                    span
+                    span
+                    span
+                    span
+                #other.other
+                    .inner
+                        .wrapper
+                            .nav-center
+                                a(href="#").page__text_w-600.mb20 Услуги
+                                a(href="#").page__text_w-600.mb20 Портфолио
+                                a(href="#").page__text_w-600.mb20 О компании
+                                a(href="#").page__text_w-600.mb20 Команда
+                                a(href="#").page__text_w-600.mb20 Отзывы
+                                a(href="#").page__text_w-600.mb20 Контакты
