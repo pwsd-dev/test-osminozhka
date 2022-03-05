@@ -1,2 +1,155 @@
 .footer {
+  padding-top: 100px;
+  position: relative;
+
+  .sm-block({
+    padding-top: 30px;
+    });
+
+  .tentacles {
+    position: absolute;
+    top: -360px;
+
+    .laptopBig-block({
+        top: -320px;
+    });
+
+    .laptopMini-block({
+        display: none;
+    });
+  }
+
+  .info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 860px;
+    margin-bottom: 100px;
+
+    .sm-block({
+        margin-bottom: 0px;
+    });
+
+    &-left,
+    &-mid,
+    &-right {
+      display: flex;
+      flex-direction: column;
+      margin: 0 20px;
+
+      .sm-block({
+        margin-bottom: 50px;
+        });
+    }
+
+    .laptopBig-block({
+        width: 760px;
+        position: relative;
+        left: 30px;
+    });
+
+    .laptopMid-block({
+        width: 740px;
+        position: relative;
+        left: 70px;
+    });
+
+    .laptopM-block({
+        left: 80px;
+    });
+
+    .laptopMd-block({
+        width: 720px;
+        left: 120px;
+    });
+
+    .laptopMini-block({
+        width: 89%;
+        left: 0;
+        right: 0;
+    });
+
+    .sm-block({
+        flex-direction: column;
+        width: 100%;
+        
+    });
+  }
+
+  .info-second-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+
+    .laptopMini-block({
+        width: 100%;
+    });
+
+    .xs-block({
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+    });
+  }
+
+  .info-second-wrapper-right {
+    // .laptopBig-block({
+    //     left: 60px;
+    // });
+
+    .sm-block({
+       position: relative;
+       left: 120px;
+    });
+
+    .xs-block({
+        display: flex;
+        justify-content: space-between;
+        left: 0;
+
+        .page__img {
+            margin: 0 10px 20px 0;
+        }
+    });
+  }
+
+  .page__text_b-700 {
+    margin-bottom: 20px;
+  }
+
+  .page__text_b-400 {
+    margin-bottom: 10px;
+  }
+
+  .page__text_pink_50px {
+    margin-bottom: 20px;
+  }
+
+  .page__img {
+    margin-bottom: 50px;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+
+    .xs-block({
+        margin-bottom: 40px;
+    });
+  }
+
+  .empty {
+    width: 50%;
+
+    .laptopMini-block({
+        width: 11%;
+    });
+
+    .sm-block({
+        width: 0;
+    });
+  }
+
+  .main-wrapper {
+    display: flex;
+  }
 }
