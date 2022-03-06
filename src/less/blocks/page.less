@@ -1,6 +1,50 @@
 .page {
-  a {
-    text-decoration: none;
+  &__link {
+    text-decoration-line: none;
+    position: relative;
+    transition: 0.25s ease-in-out;
+
+    &_underline {
+      position: relative;
+      text-decoration-line: none;
+      &:hover {
+        transition: 0.25s ease-in-out;
+        color: #ff4978;
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: #ff4978;
+          width: 100%;
+          height: 2px;
+          top: 30px;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          opacity: 1;
+          transition: 0.25s ease-in-out;
+        }
+      }
+    }
+
+    &_underline-two {
+      position: relative;
+      text-decoration-line: none;
+      transition: 0.25s ease-in-out;
+      &:hover {
+        transition: 0.25s ease-in-out;
+        color: #00ffff;
+      }
+    }
+
+    &_underline-three {
+      position: relative;
+      text-decoration-line: none;
+      transition: 0.25s ease-in-out;
+      &:hover {
+        transition: 0.25s ease-in-out;
+        color: #ff4978;
+      }
+    }
   }
   &__title {
     &-h1 {
@@ -8,6 +52,12 @@
       font-size: 280px;
       color: #595965;
       text-transform: uppercase;
+      transition: 0.25s ease-in-out;
+
+      &:hover {
+        transition: 0.25s ease-in-out;
+        color: #ff4978;
+      }
 
       .laptopVeryBig-block({
         font-size: 260px;
@@ -45,6 +95,11 @@
       font-size: 60px;
       color: #ff4978;
       text-transform: uppercase;
+
+      &:hover {
+        transition: 0.25s ease-in-out;
+        color: #00ffff;
+      }
 
       .laptopMid-block({
         font-size: 50px;
@@ -140,6 +195,20 @@
       //   .ipad-block({
       //       font-size: 15px;
       //     });
+
+      &_pink {
+        font-family: "@{Montserrat}-Regular";
+        font-size: 25px;
+        line-height: 40px;
+        color: #ff4978;
+        .sm-block({
+        font-size: 20px;
+       });
+
+        .xxs-block({
+        font-size: 15px;
+       });
+      }
 
       .sm-block({
         font-size: 20px;

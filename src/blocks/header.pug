@@ -6,14 +6,9 @@ header.header
                     .logo
                         img(src="assets/img/logo.svg")
             .mid
-                a(href="#").page__text_w-600 Услуги
-                a(href="#").page__text_w-600 Портфолио
-                a(href="#").page__text_w-600 О компании
-                a(href="#").page__text_w-600 Команда
-                a(href="#").page__text_w-600 Отзывы
-                a(href="#").page__text_w-600 Контакты
+                <nav-component></nav-component>
             .right
-                p.page__text_w-500 Ru/En
+                <lang-component></lang-component>
             .burger
                 button(type="button" onclick="openBlock()")#burgerBtn.icon
                     span
@@ -24,9 +19,9 @@ header.header
                     .inner
                         .wrapper
                             .nav-center
-                                a(href="#").page__text_w-600.mb20 Услуги
-                                a(href="#").page__text_w-600.mb20 Портфолио
-                                a(href="#").page__text_w-600.mb20 О компании
-                                a(href="#").page__text_w-600.mb20 Команда
-                                a(href="#").page__text_w-600.mb20 Отзывы
-                                a(href="#").page__text_w-600.mb20 Контакты
+                                a(href="#").page__text_w-600.mb20.page__link_underline Услуги
+                                a(href="#").page__text_w-600.mb20.page__link_underline Портфолио
+                                a(href="#").page__text_w-600.mb20.page__link_underline О компании
+                                a(href="#").page__text_w-600.mb20.page__link_underline Команда
+                                a(href="#").page__text_w-600.mb20.page__link_underline Отзывы
+                                a(href="#").page__text_w-600.mb20.page__link_underline Контакты
