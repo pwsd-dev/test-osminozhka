@@ -1,130 +1,265 @@
 <!DOCTYPE html>
-<html lang="ru"> 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-		<title>Контакты</title>
-		<link rel="stylesheet" href="css/styles.css" type="text/css">
-	</head>
-	<body>
-		<div class="page" id="app">
-			<header class="header">
-				<div class="wrapper">
-					<nav class="nav">
-						<div class="left"><a href="#">
-								<div class="logo"><img src="assets/img/logo.svg"></div></a></div>
-						<div class="mid"><nav-component></nav-component></div>
-						<div class="right"><lang-component></lang-component></div>
-						<div class="burger">
-							<button class="icon" type="button" onclick="openBlock()" id="burgerBtn"><span></span><span></span><span></span><span></span></button>
-							<div class="other" id="other">
-								<div class="inner">
-									<div class="wrapper">
-										<div class="nav-center"><a class="page__text_w-600 mb20 page__link_underline" href="#">Услуги</a><a class="page__text_w-600 mb20 page__link_underline" href="#">Портфолио</a><a class="page__text_w-600 mb20 page__link_underline" href="#">О компании</a><a class="page__text_w-600 mb20 page__link_underline" href="#">Команда</a><a class="page__text_w-600 mb20 page__link_underline" href="#">Отзывы</a><a class="page__text_w-600 mb20 page__link_underline" href="#">Контакты</a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</nav>
-				</div>
-			</header>
-			<section class="banner-contacts">
-				<div class="wrapper">
-					<h1 class="page__title-h1">Контакты</h1>
-				</div>
-			</section>
-			<section class="contacts">
-				<div class="wrapper">
-					<div class="contacts-wrapper">
-						<div class="left">
-							<div class="top"><a class="page__title-h3 page__link" href="#">+7 (495) 278-07-08</a>
-								<h3 class="page__title-h3 page__link"> +7 (495) 278-07-08</h3>
-							</div>
-							<div class="mid">
-								<p class="page__text_w-50px">Бухгалтерия: buhgalter@myosminozhka.ru</p>
-								<p class="page__text_w-50px">info@myosminozhka.ru</p>
-								<p class="page__text_w-50px">Москва, БЦ Серпуховской Двор 2-й  Рощинский проезд, дом 8</p>
-							</div>
-							<div class="bottom"><a class="page__text_pink page__link_underline-two" href="#">Презентация о компании</a></div>
-						</div>
-						<div class="right">
-							<div class="map">
-								<div id="map"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<footer class="footer">
-				<div class="tentacles"><img src="assets/img/tentacles.png"></div>
-				<div class="wrapper">
-					<div class="main-wrapper">
-						<div class="empty"></div>
-						<div class="info-main-wrapper">
-							<div class="info-wrapper">
-								<div class="info-wrapper-left"><a class="page__text_b-700 page__link_underline-three" href="#">Услуги</a><a class="page__text_b-400 page__link_underline-three" href="#">Канал продаж</a><a class="page__text_b-400 page__link_underline-three" href="#">Контекстная реклама</a><a class="page__text_b-400 page__link_underline-three" href="#">Интернет-SEO продвижение</a><a class="page__text_b-400 page__link_underline-three" href="#">Управление репутацией</a></div>
-								<div class="info-wrapper-mid"><a class="page__text_b-700 page__link_underline-three" href="#">О нас</a><a class="page__text_b-400 page__link_underline-three" href="#">Компания</a><a class="page__text_b-400 page__link_underline-three" href="#">Команда</a><a class="page__text_b-400 page__link_underline-three" href="#">Контакты</a><a class="page__text_b-400 page__link_underline-three" href="#">Новости</a></div>
-								<div class="info-wrapper-right"><a class="page__text_b-700 page__link_underline-three" href="#">Клиентам</a><a class="page__text_b-400 page__link_underline-three" href="#">Отзывы</a><a class="page__text_b-400 page__link_underline-three" href="#">Портфолио</a><a class="page__text_b-400 page__link_underline-three" href="#">Услуги</a></div>
-							</div>
-							<div class="info-second-wrapper">
-								<div class="col"><a class="page__text_pink_50px page__link_underline-two" href="#">+7 (495) 278-07-08</a><a class="page__text_pink_50px page__link_underline-two" href="#">+7 (495) 278-07-08</a></div>
-								<div class="info-second-wrapper-right">
-									<div class="page__icon">
-										<div class="icon"><img src="assets/img/inst2.png"></div>
-									</div>
-									<div class="page__icon">
-										<div class="icon"><img src="assets/img/facebook.png"></div>
-									</div>
-									<div class="page__icon">
-										<div class="icon"><img src="assets/img/oth.png"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
-			<section class="dop-info">
-				<div class="wrapper">
-					<div class="dop-info-wrapper">
-						<div class="first-stage">
-							<div class="dop-info-block">
-								<div class="page__img"><svg width="31" height="20" viewBox="0 0 31 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.625 12H17.0536M4.625 15H12.9107M3.07143 19H27.9286C29.0726 19 30 18.1046 30 17V3C30 1.89543 29.0726 1 27.9286 1H3.07143C1.92741 1 1 1.89543 1 3V17C1 18.1046 1.92741 19 3.07143 19ZM24.3036 4.5H26.375V6.5H24.3036V4.5Z" stroke="#FF4978" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-								</div>
-								<p class="page__text_b-400">ИНН/КПП: 6317139806/631701001 Банк: АО "Тинькофф Банк" БИК: 044525974 Р/С: 40702810010000559615 К/С: 30101810145250000974</p>
-							</div>
-							<div class="dop-info-block">
-								<div class="page__img"><svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.43032 19.838L4.65336 11.1345C5.16599 9.75016 6.52562 8.82609 8.0498 8.82609M1.43032 19.838C1.22061 20.4043 1.65592 21 2.27943 21H24.9751C25.7372 21 26.417 20.538 26.6733 19.8458L29.8934 11.1502C30.3128 10.0176 29.4422 8.82609 28.1952 8.82609H8.0498M1.43032 19.838C1.36374 20.0177 1.36218 20.2005 1.411 20.3662C1.15422 20.0657 1 19.6807 1 19.2609V2.73913C1 1.77864 1.80735 1 2.80328 1H7.77663C8.35827 1 8.90419 1.27057 9.24281 1.72666L11.1325 4.27192C11.2286 4.40143 11.3837 4.47826 11.5488 4.47826H24.4426C25.4385 4.47826 26.2459 5.2569 26.2459 6.21739V8.82609H8.0498" stroke="#FF4978" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-								</div><a class="page__text_b-400 page__link_underline-three" href="#">Бухгалтерия: buhgalter@myosminozhka.ru</a>
-							</div>
-						</div>
-						<div class="second-stage">
-							<div class="dop-info-block">
-								<div class="page__img"><svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.17857 1H24.8214M6.17857 1V25M6.17857 1H1V25H6.17857M24.8214 1V25M24.8214 1H30V25H24.8214M6.17857 25H24.8214M6.17857 7H1M1 13H30M6.17857 19H1M30 7H24.8214M30 19H24.8214" stroke="#FF4978" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-								</div><a class="page__text_b-400_pink page__link_underline-three" href="#">Презентация о компании</a>
-							</div>
-							<div class="dop-info-block">
-								<div class="page__img"><svg width="22" height="29" viewBox="0 0 22 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M21 10.6489C21 5.31995 16.5228 1 11 1C5.47715 1 1 5.31995 1 10.6489V11.2301C1 13.3622 1.69046 15.4411 2.97486 17.1762L10.9802 27.9902C10.9899 28.0033 11.0101 28.0033 11.0198 27.9902L19.0251 17.1762C20.3095 15.4411 21 13.3622 21 11.2301V10.6489Z" stroke="#FF4978" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M9.04542 6.79019C10.2806 6.21625 11.7194 6.21625 12.9546 6.79019C14.1897 7.36413 15.0868 8.44955 15.3919 9.73918C15.697 11.0288 15.3768 12.3823 14.522 13.4165C13.6673 14.4507 12.3709 15.0531 11 15.0531C9.62907 15.0531 8.33273 14.4507 7.47797 13.4165C6.62321 12.3823 6.30304 11.0288 6.6081 9.73918C6.91316 8.44955 7.81025 7.36413 9.04542 6.79019Z" stroke="#FF4978" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-								</div><a class="page__text_b-400 page__link_underline-three" href="#">Москва, БЦ Серпуховской Двор 2-й Рощинский проезд, дом 8</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div><script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDknIkUHRCC9B6YvGBAkYFYbqoOpDRs6tY"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-		<script src="js/debug-grid-create.js"></script>
-		<script src="js/main.js"></script>
-	</body>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <base href="build/" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  </head>
+  <body>
+    <div class="page" id="app">
+      <header class="header">
+        <div class="wrapper">
+          <nav class="nav">
+            <div class="left">
+              <a href="#">
+                <div class="logo"><img src="assets/img/logo.svg" /></div
+              ></a>
+            </div>
+            <div class="mid"><nav-component></nav-component></div>
+            <div class="right"><lang-component></lang-component></div>
+            <div class="burger">
+              <button
+                class="icon"
+                type="button"
+                onclick="openBlock()"
+                id="burgerBtn"
+              >
+                <span></span><span></span><span></span><span></span>
+              </button>
+              <div class="other" id="other">
+                <div class="inner">
+                  <div class="wrapper">
+                    <div class="nav-center">
+                      <a
+                        class="page__text_w-600 mb20 page__link_underline"
+                        href="#"
+                        >Услуги</a
+                      ><a
+                        class="page__text_w-600 mb20 page__link_underline"
+                        href="#"
+                        >Портфолио</a
+                      ><a
+                        class="page__text_w-600 mb20 page__link_underline"
+                        href="#"
+                        >О компании</a
+                      ><a
+                        class="page__text_w-600 mb20 page__link_underline"
+                        href="#"
+                        >Команда</a
+                      ><a
+                        class="page__text_w-600 mb20 page__link_underline"
+                        href="#"
+                        >Отзывы</a
+                      ><a
+                        class="page__text_w-600 mb20 page__link_underline"
+                        href="#"
+                        >Контакты</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="banner-contacts">
+        <div class="wrapper">
+          <h1 class="page__title-h1">Контакты</h1>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="wrapper">
+          <div class="contacts-wrapper">
+            <div class="left">
+              <div class="top">
+                <a class="page__title-h3 page__link" href="#"
+                  >+7 (495) 278-07-08</a
+                >
+                <h3 class="page__title-h3 page__link">+7 (495) 278-07-08</h3>
+              </div>
+              <div class="mid">
+                <p class="page__text_w-50px">
+                  Бухгалтерия: buhgalter@myosminozhka.ru
+                </p>
+                <p class="page__text_w-50px">info@myosminozhka.ru</p>
+                <p class="page__text_w-50px">
+                  Москва, БЦ Серпуховской Двор 2-й Рощинский проезд, дом 8
+                </p>
+              </div>
+              <div class="bottom">
+                <a class="page__text_pink page__link_underline-two" href="#"
+                  >Презентация о компании</a
+                >
+              </div>
+            </div>
+            <div class="right">
+              <div class="map">
+                <div id="map"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="tentacles"><img src="assets/img/tentacles.png" /></div>
+        <div class="wrapper">
+          <div class="main-wrapper">
+            <div class="empty"></div>
+            <div class="info-main-wrapper">
+              <info-component></info-component>
+              <div class="info-second-wrapper">
+                <div class="col">
+                  <a
+                    class="page__text_pink_50px page__link_underline-two"
+                    href="#"
+                    >+7 (495) 278-07-08</a
+                  ><a
+                    class="page__text_pink_50px page__link_underline-two"
+                    href="#"
+                    >+7 (495) 278-07-08</a
+                  >
+                </div>
+                <div class="info-second-wrapper-right">
+                  <div class="page__icon">
+                    <div class="icon"><img src="assets/img/inst2.png" /></div>
+                  </div>
+                  <div class="page__icon">
+                    <div class="icon">
+                      <img src="assets/img/facebook.png" />
+                    </div>
+                  </div>
+                  <div class="page__icon">
+                    <div class="icon"><img src="assets/img/oth.png" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <section class="dop-info">
+        <div class="wrapper">
+          <div class="dop-info-wrapper">
+            <div class="first-stage">
+              <div class="dop-info-block">
+                <div class="page__img">
+                  <svg
+                    width="31"
+                    height="20"
+                    viewBox="0 0 31 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.625 12H17.0536M4.625 15H12.9107M3.07143 19H27.9286C29.0726 19 30 18.1046 30 17V3C30 1.89543 29.0726 1 27.9286 1H3.07143C1.92741 1 1 1.89543 1 3V17C1 18.1046 1.92741 19 3.07143 19ZM24.3036 4.5H26.375V6.5H24.3036V4.5Z"
+                      stroke="#FF4978"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <p class="page__text_b-400">
+                  ИНН/КПП: 6317139806/631701001 Банк: АО "Тинькофф Банк" БИК:
+                  044525974 Р/С: 40702810010000559615 К/С: 30101810145250000974
+                </p>
+              </div>
+              <div class="dop-info-block">
+                <div class="page__img">
+                  <svg
+                    width="32"
+                    height="22"
+                    viewBox="0 0 32 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.43032 19.838L4.65336 11.1345C5.16599 9.75016 6.52562 8.82609 8.0498 8.82609M1.43032 19.838C1.22061 20.4043 1.65592 21 2.27943 21H24.9751C25.7372 21 26.417 20.538 26.6733 19.8458L29.8934 11.1502C30.3128 10.0176 29.4422 8.82609 28.1952 8.82609H8.0498M1.43032 19.838C1.36374 20.0177 1.36218 20.2005 1.411 20.3662C1.15422 20.0657 1 19.6807 1 19.2609V2.73913C1 1.77864 1.80735 1 2.80328 1H7.77663C8.35827 1 8.90419 1.27057 9.24281 1.72666L11.1325 4.27192C11.2286 4.40143 11.3837 4.47826 11.5488 4.47826H24.4426C25.4385 4.47826 26.2459 5.2569 26.2459 6.21739V8.82609H8.0498"
+                      stroke="#FF4978"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <a class="page__text_b-400 page__link_underline-three" href="#"
+                  >Бухгалтерия: buhgalter@myosminozhka.ru</a
+                >
+              </div>
+            </div>
+            <div class="second-stage">
+              <div class="dop-info-block">
+                <div class="page__img">
+                  <svg
+                    width="31"
+                    height="26"
+                    viewBox="0 0 31 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.17857 1H24.8214M6.17857 1V25M6.17857 1H1V25H6.17857M24.8214 1V25M24.8214 1H30V25H24.8214M6.17857 25H24.8214M6.17857 7H1M1 13H30M6.17857 19H1M30 7H24.8214M30 19H24.8214"
+                      stroke="#FF4978"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <a
+                  class="page__text_b-400_pink page__link_underline-three"
+                  href="#"
+                  >Презентация о компании</a
+                >
+              </div>
+              <div class="dop-info-block">
+                <div class="page__img">
+                  <svg
+                    width="22"
+                    height="29"
+                    viewBox="0 0 22 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21 10.6489C21 5.31995 16.5228 1 11 1C5.47715 1 1 5.31995 1 10.6489V11.2301C1 13.3622 1.69046 15.4411 2.97486 17.1762L10.9802 27.9902C10.9899 28.0033 11.0101 28.0033 11.0198 27.9902L19.0251 17.1762C20.3095 15.4411 21 13.3622 21 11.2301V10.6489Z"
+                      stroke="#FF4978"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.04542 6.79019C10.2806 6.21625 11.7194 6.21625 12.9546 6.79019C14.1897 7.36413 15.0868 8.44955 15.3919 9.73918C15.697 11.0288 15.3768 12.3823 14.522 13.4165C13.6673 14.4507 12.3709 15.0531 11 15.0531C9.62907 15.0531 8.33273 14.4507 7.47797 13.4165C6.62321 12.3823 6.30304 11.0288 6.6081 9.73918C6.91316 8.44955 7.81025 7.36413 9.04542 6.79019Z"
+                      stroke="#FF4978"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <a class="page__text_b-400 page__link_underline-three" href="#"
+                  >Москва, БЦ Серпуховской Двор 2-й Рощинский проезд, дом 8</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDknIkUHRCC9B6YvGBAkYFYbqoOpDRs6tY"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/debug-grid-create.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
